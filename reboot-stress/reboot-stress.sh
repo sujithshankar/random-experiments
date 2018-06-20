@@ -31,7 +31,7 @@ if [ \$count -lt \$num_of_reboots ]
 then
     ((count++))
     echo "\$count" > /root/count
-    reboot -f
+    systemctl reboot
 fi
 EOF
 
